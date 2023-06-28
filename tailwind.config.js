@@ -17,7 +17,8 @@ export default {
         'primary-dark': '#00C9A4'
       },
       backgroundImage: {
-        'home-light-mobile': 'url(\'assets/images/background/home-light-mobile.png\')'
+        'home-light-mobile': 'url(\'assets/images/background/home-light-mobile.png\')',
+        'home-dark-mobile': 'url(\'assets/images/background/home-dark-mobile.png\')'
       }
     }
   },
