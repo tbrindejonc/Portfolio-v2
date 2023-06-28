@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    .navbar-item-background-light-mobile {
-        @apply h-16 w-16 rounded-full bg-violet-dark flex flex-col items-center justify-center
+    .navbar-item-background-mobile {
+        @apply h-16 w-16 rounded-full flex flex-col items-center justify-center
     }
 
-    .navbar-item-light-mobile {
+    .navbar-item-mobile {
         @apply h-12 w-12
     }
 
