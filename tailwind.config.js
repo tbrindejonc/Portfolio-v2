@@ -5,7 +5,18 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'pink-light': '#EADEFF',
+        'violet-light': '#F3C4FF',
+        'green-light': '#EDFDF5',
+        'primary-light': '#005B3F',
+        'violet-dark': '#211930',
+        'purple-dark': '#4D2C53',
+        'green-dark': '#0C3931',
+        'primary-dark': '#00C9A4'
+      }
+    }
   },
   plugins: []
 };
