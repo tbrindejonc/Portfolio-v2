@@ -1,5 +1,6 @@
 import {createContext, useState} from 'react';
 import {lang, theme} from '@/utils/AppTypes';
+import Home from '@/components/Home';
 
 export default function App() {
   // create and init theme context
@@ -14,7 +15,7 @@ export default function App() {
     <div id='App'>
       <ThemeContext.Provider value={theme}>
         <LangContext.Provider value={lang}>
-
+          <Home />
         </LangContext.Provider>
       </ThemeContext.Provider>
     </div>
