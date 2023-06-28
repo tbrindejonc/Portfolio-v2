@@ -1,6 +1,7 @@
 import {createContext, useState} from 'react';
 import {lang, theme} from '@/utils/AppTypes';
 import Home from '@/components/Home';
+import Navbar from '@/components/Navbar';
 
 // context for app theme
 export const ThemeContext = createContext<theme>('light');
@@ -17,6 +18,7 @@ export default function App() {
     <div id='App'>
       <ThemeContext.Provider value={theme}>
         <LangContext.Provider value={lang}>
+          <Navbar />
           <Home />
         </LangContext.Provider>
       </ThemeContext.Provider>
