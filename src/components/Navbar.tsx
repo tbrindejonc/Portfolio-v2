@@ -3,7 +3,12 @@ import {theme} from '@/utils/AppTypes';
 import {ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 
-export default function Navbar() {
+// component props
+type Props = {
+  changeTheme: () => void
+}
+
+export default function Navbar({changeTheme}: Props) {
   // get theme context
   const theme = useContext<theme>(ThemeContext);
   // check if current theme is light
@@ -20,7 +25,7 @@ export default function Navbar() {
               :  <img src='src/assets/images/navbar/lang-dark.png' alt='lang-icon' className={'navbar-item-mobile'}/>
           }
         </div>
-        <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`}>
+        <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`} onClick={changeTheme}>
           {
             isCurrentLight ?
               <img src='src/assets/images/navbar/moon.png' alt='lang-icon' className={'navbar-item-mobile'}/>
