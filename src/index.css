@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer components {
+    .navbar-item-background-light-mobile {
+        @apply h-16 w-16 rounded-full bg-violet-dark flex flex-col items-center justify-center
+    }
+
+    .navbar-item-light-mobile {
+        @apply h-12 w-12
+    }
+
     .home-base-mobile {
         @apply h-screen w-full bg-no-repeat bg-cover flex flex-col justify-center items-center space-y-8
     }
