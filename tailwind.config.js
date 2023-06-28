@@ -15,6 +15,9 @@ export default {
         'purple-dark': '#4D2C53',
         'green-dark': '#0C3931',
         'primary-dark': '#00C9A4'
+      },
+      backgroundImage: {
+        'home-light-mobile': 'url(\'assets/images/background/home-light-mobile.png\')'
       }
     }
   },
