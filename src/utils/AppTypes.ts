@@ -25,5 +25,13 @@ export type project = {
   gif: string,
   description: string,
   techs: Array<projectIcon>,
-  views: Array<projectIcon>
+  views: Array<projectLinkIcon>
+}
+
+// project icon link
+export type projectLinkIcon = {
+  dark: string,
+  light: string,
+  name: string,
+  link: string
 }
