@@ -28,7 +28,7 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
             : <img src='src/assets/images/projects/utils/arrow-dark.png' alt='arrow'
               className={`${isActive ? 'project-arrow-active' : 'project-arrow-inactive'}`}/>
         }
-        <div className={'w-full rounded-xl bg-green-light flex flex-row items-center justify-around'}>
+        <div className={`w-full rounded-xl flex flex-row items-center justify-around ${isCurrentLight ? 'bg-green-light' : 'bg-violet-dark'}`}>
           {
             techs.map((tech, index) => {
               return <img key={index} src={isCurrentLight ? tech.light : tech.dark} alt={tech.name} className={'w-14 h-auto py-1'}/>;
@@ -36,7 +36,7 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
           }
         </div>
         <p>{description}</p>
-        <div className={'w-full rounded-xl bg-pink-light flex flex-row items-center justify-around'}>
+        <div className={`w-full rounded-xl flex flex-row items-center justify-around ${isCurrentLight ? 'bg-pink-light' : 'bg-green-dark'}`}>
           {
             views.map((view, index) => {
               return <img key={index} src={isCurrentLight ? view.light : view.dark} alt={view.name} className={'w-14 h-auto py-1'}/>;
