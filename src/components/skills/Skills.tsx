@@ -1,7 +1,7 @@
 import {skillIcons, skillSectionsIcons} from '@/utils/SkillsIcons';
 import {useContext, useState} from 'react';
 import {ThemeContext} from '@/App';
-import {skillIcon, theme} from '@/utils/AppTypes';
+import {projectIcon, theme} from '@/utils/AppTypes';
 import {isLight} from '@/utils/AppFuncs';
 
 export default function Skills() {
@@ -35,7 +35,7 @@ export default function Skills() {
   };
 
   // get section icon
-  const getCurrentIcon = (currentIcon: skillIcon, currentIndex: number) => {
+  const getCurrentIcon = (currentIcon: projectIcon, currentIndex: number) => {
     // if light theme
     if (isCurrentLight){
       // if selected

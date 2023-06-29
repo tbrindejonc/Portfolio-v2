@@ -13,7 +13,7 @@ export type experience = {
 }
 
 // skill section icon
-export type skillIcon = {
+export type projectIcon = {
   dark: string,
   light: string,
   name: string

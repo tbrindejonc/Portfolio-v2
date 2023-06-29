@@ -1,7 +1,7 @@
-import {skillIcon} from '@/utils/AppTypes';
+import {projectIcon} from '@/utils/AppTypes';
 
 // array of all skill sections icons
-export const skillSectionsIcons: Array<skillIcon> = [
+export const skillSectionsIcons: Array<projectIcon> = [
   {
     dark: '../src/assets/images/skills/sections/front-end-light.png',
     light: '../src/assets/images/skills/sections/front-end-dark.png',
@@ -24,7 +24,7 @@ export const skillSectionsIcons: Array<skillIcon> = [
   }
 ];
 
-export const skillIcons: Array<Array<skillIcon>> = [
+export const skillIcons: Array<Array<projectIcon>> = [
   [
     {
       dark: '../src/assets/images/skills/front-end/html-dark.png',
