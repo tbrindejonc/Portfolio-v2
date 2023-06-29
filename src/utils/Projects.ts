@@ -71,7 +71,10 @@ export const projects: Array<project> = [
       allTechs.node
     ],
     views: [
-      allViews.github
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/Pinit'
+      }
     ]
   },
   {
@@ -86,8 +89,14 @@ export const projects: Array<project> = [
       allTechs.firebase
     ],
     views: [
-      allViews.github,
-      allViews.web
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/Portfolio'
+      },
+      {
+        ...allViews.web,
+        link: 'https://portfolio-v1.timeuh.live/'
+      }
     ]
   },
   {
@@ -100,7 +109,10 @@ export const projects: Array<project> = [
       allTechs.tailwind
     ],
     views: [
-      allViews.github
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/Spotifree'
+      }
     ]
   },
   {
@@ -112,7 +124,10 @@ export const projects: Array<project> = [
       allTechs.java
     ],
     views: [
-      allViews.github
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/UHC-Run'
+      }
     ]
   }
 ];
