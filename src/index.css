@@ -31,4 +31,14 @@
     .about-base-mobile {
         @apply h-screen w-full flex flex-col items-center justify-center
     }
+
+    .experience-item-base-mobile {
+        @apply w-5/6 h-40 bg-gradient-to-b from-violet-dark to-green-dark border-2 border-primary-light rounded-xl flex flex-row
+            items-center justify-center space-x-4
+    }
+
+    .experience-item-alternate-mobile {
+        @apply w-5/6 h-40 rounded-xl flex flex-row items-center justify-center space-x-4 absolute left-[100%]
+            transform duration-200
+    }
 }
