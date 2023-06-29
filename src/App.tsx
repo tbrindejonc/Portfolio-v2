@@ -3,6 +3,7 @@ import {lang, theme} from '@/utils/AppTypes';
 import Home from '@/components/Home';
 import Navbar from '@/components/Navbar';
 import {isLight} from '@/utils/AppFuncs';
+import About from '@/components/About';
 
 // context for app theme
 export const ThemeContext = createContext<theme>('light');
@@ -26,6 +27,7 @@ export default function App() {
         <LangContext.Provider value={lang}>
           <Navbar changeTheme={changeTheme}/>
           <Home />
+          <About />
         </LangContext.Provider>
       </ThemeContext.Provider>
     </div>
