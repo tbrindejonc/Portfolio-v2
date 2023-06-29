@@ -9,8 +9,10 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
   // check if the current theme is light
   const isCurrentLight = isLight(theme);
 
+  // activation state of the project item
   const [isActive, setActive] = useState<boolean>(false);
 
+  // activate and deactivate item
   const handleActivation = () => {
     setActive(!isActive);
   };
