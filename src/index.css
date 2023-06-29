@@ -63,7 +63,7 @@
 
     .project-item-base {
         @apply w-3/4 h-1/4 flex flex-col items-center justify-between bg-gradient-to-b border-2 border-violet-dark rounded-xl space-y-4
-            p-4 duration-200 transition-all transform
+            p-4 duration-200 transition-all transform font-bold
     }
 
     .project-item-light {
