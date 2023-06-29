@@ -19,7 +19,7 @@ export default function Experience() {
           <img src='src/assets/images/sections/work-light.png' alt='work' className={'w-32 h-32 rounded-full'}/>
           :  <img src='src/assets/images/sections/work-dark.png' alt='work' className={'w-32 h-32 rounded-full'}/>
       }
-      <h1 className={`text-5xl font-bold text-center w-5/6 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>Mon expérience</h1>
+      <h1 className={`text-5xl font-bold text-center w-5/6 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'} pb-6`}>Mon expérience</h1>
       {workExperiences.map((workExperience, index) => {
         return (
           <WorkItem key={index} logo={workExperience.logo} company={workExperience.company}
