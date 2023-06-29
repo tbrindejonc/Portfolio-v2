@@ -63,7 +63,7 @@
 
     .project-item-base {
         @apply w-3/4 h-1/4 flex flex-col items-center justify-between bg-gradient-to-b border-2 border-violet-dark rounded-xl space-y-4
-            p-4
+            p-4 duration-200 transition-all transform
     }
 
     .project-item-light {
@@ -72,5 +72,18 @@
 
     .project-item-dark {
         @apply from-green-light to-pink-light text-green-dark
+    }
+
+    .project-description-base {
+        @apply w-3/4 h-full  flex flex-col items-center justify-between bg-gradient-to-b border-2 border-violet-dark rounded-xl space-y-4
+        p-4 duration-500 transform
+    }
+
+    .project-arrow-active {
+        @apply transform rotate-180 duration-200
+    }
+
+    .project-arrow-inactive {
+        @apply transform rotate-0 duration-200
     }
 }
