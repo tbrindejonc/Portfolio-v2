@@ -22,7 +22,7 @@ export default function App() {
   };
 
   return (
-    <div id='App'>
+    <div id='App' className={'font-Wix'}>
       <ThemeContext.Provider value={theme}>
         <LangContext.Provider value={lang}>
           <Navbar changeTheme={changeTheme}/>
