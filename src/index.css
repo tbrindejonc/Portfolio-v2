@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Wix;
+    src: url("src/assets/font/WixMadeforDisplay-VariableFont_wght.ttf");
+}
+
 @layer components {
     .navbar-item-background-mobile {
         @apply h-16 w-16 rounded-full flex flex-col items-center justify-center
