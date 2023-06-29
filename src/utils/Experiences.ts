@@ -10,7 +10,7 @@ export const workExperiences: Array<experience> = [
   },
   {
     company: 'PLUS À VENIR',
-    logo: '../src/assets/images/experience/soon-light.png',
+    logo: '../src/assets/images/experience/soon.png',
     period: 'Revenez plus tard',
     role: 'Développe mes projets'
   }
