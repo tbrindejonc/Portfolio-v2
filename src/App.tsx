@@ -1,9 +1,9 @@
 import {createContext, useState} from 'react';
 import {lang, theme} from '@/utils/AppTypes';
-import Home from '@/components/Home';
+import Home from '@/components/home/Home';
 import Navbar from '@/components/Navbar';
 import {isLight} from '@/utils/AppFuncs';
-import About from '@/components/About';
+import About from '@/components/about/About';
 import Experience from '@/components/experience/Experience';
 import Skills from '@/components/skills/Skills';
 

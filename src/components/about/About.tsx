@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <div id={'about'} className={`about-base-mobile ${isCurrentLight ? 'bg-pink-light text-violet-dark' : 'bg-violet-dark text-pink-light'}`}>
-      <img src='src/assets/images/pictures/photo_8.png' alt='me' className={'w-16 h-16 rounded-full'}/>
+      <img src='../../assets/images/pictures/photo_8.png' alt='me' className={'w-16 h-16 rounded-full'}/>
       <h1 className={'text-5xl pb-8 pt-2 font-bold'}>Qui suis-je ?</h1>
       <div className={'flex flex-col items-center space-y-4 w-2/3'}>
         <p>Je m’appelle Timothée Brindejonc et j’ai 21 ans. Je suis actuellement en 3ème année de
