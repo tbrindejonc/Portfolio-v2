@@ -22,4 +22,8 @@
     .home-dark-mobile {
         @apply bg-home-dark-mobile
     }
+
+    .about-base-mobile {
+        @apply h-screen w-full flex flex-col items-center justify-center
+    }
 }
