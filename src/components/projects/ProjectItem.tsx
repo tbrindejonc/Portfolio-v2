@@ -41,7 +41,9 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
         <div className={`w-full rounded-xl flex flex-row items-center justify-around ${isCurrentLight ? 'bg-pink-light' : 'bg-green-dark'}`}>
           {
             views.map((view, index) => {
-              return <img key={index} src={isCurrentLight ? view.light : view.dark} alt={view.name} className={'w-14 h-auto py-1'}/>;
+              return <a href={view.link} key={index}>
+                <img src={isCurrentLight ? view.light : view.dark} alt={view.name} className={'w-14 h-auto py-1'} />
+              </a>;
             })
           }
         </div>
