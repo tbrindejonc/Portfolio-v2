@@ -60,4 +60,17 @@
     .skill-section-dark-selected {
         @apply bg-pink-light border-violet-dark
     }
+
+    .project-item-base {
+        @apply w-3/4 h-1/4 flex flex-col items-center justify-between bg-gradient-to-b border-2 border-violet-dark rounded-xl space-y-4
+            p-4
+    }
+
+    .project-item-light {
+        @apply from-violet-dark to-green-dark text-green-light
+    }
+
+    .project-item-dark {
+        @apply from-green-light to-pink-light text-green-dark
+    }
 }
