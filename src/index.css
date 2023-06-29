@@ -86,4 +86,8 @@
     .project-arrow-inactive {
         @apply transform rotate-0 duration-200
     }
+
+    .contact-link {
+        @apply flex flex-row items-center justify-between w-full h-[15vh]
+    }
 }
