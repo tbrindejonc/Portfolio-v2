@@ -1,13 +1,7 @@
 import {useState} from 'react';
+import {experience} from '@/utils/AppTypes';
 
-type Props = {
-  company: string,
-  logo: string,
-  period: string,
-  role: string
-}
-
-export default function WorkItem({company, logo, period, role}: Props) {
+export default function WorkItem({company, logo, period, role}: experience) {
   // state of slider
   const [isActive, setActive] = useState<boolean>(false);
 
