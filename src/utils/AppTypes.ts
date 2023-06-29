@@ -11,3 +11,10 @@ export type experience = {
   period: string,
   role: string
 }
+
+// skill section icon
+export type skillIcon = {
+  dark: string,
+  light: string,
+  name: string
+}
