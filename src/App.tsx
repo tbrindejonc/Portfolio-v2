@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import {isLight} from '@/utils/AppFuncs';
 import About from '@/components/About';
 import Experience from '@/components/experience/Experience';
+import Skills from '@/components/skills/Skills';
 
 // context for app theme
 export const ThemeContext = createContext<theme>('light');
@@ -30,6 +31,7 @@ export default function App() {
           <Home />
           <About />
           <Experience />
+          <Skills />
         </LangContext.Provider>
       </ThemeContext.Provider>
     </div>
