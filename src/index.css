@@ -33,8 +33,7 @@
     }
 
     .experience-item-base-mobile {
-        @apply w-5/6 h-40 bg-gradient-to-b from-violet-dark to-green-dark border-2 border-primary-light rounded-xl flex flex-row
-            items-center justify-center space-x-4
+        @apply w-5/6 h-40 bg-gradient-to-b border-2 rounded-xl flex flex-row items-center justify-center space-x-4
     }
 
     .experience-item-alternate-mobile {
