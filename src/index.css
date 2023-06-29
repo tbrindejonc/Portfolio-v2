@@ -40,4 +40,24 @@
         @apply w-5/6 h-40 rounded-xl flex flex-row items-center justify-center space-x-4 absolute left-[100%]
             transform duration-200
     }
+
+    .skill-section-base {
+        @apply w-[22%] h-16 flex flex-col items-center justify-center border-2 rounded-t-xl p-2
+    }
+
+    .skill-section-light-unselected {
+        @apply bg-pink-light border-primary-light
+    }
+
+    .skill-section-light-selected {
+        @apply bg-purple-dark border-green-dark
+    }
+
+    .skill-section-dark-unselected {
+        @apply bg-violet-dark border-primary-dark
+    }
+
+    .skill-section-dark-selected {
+        @apply bg-pink-light border-violet-dark
+    }
 }
