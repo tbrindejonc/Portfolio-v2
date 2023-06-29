@@ -18,3 +18,12 @@ export type projectIcon = {
   light: string,
   name: string
 }
+
+// project item
+export type project = {
+  name: string,
+  gif: string,
+  description: string,
+  techs: Array<projectIcon>,
+  views: Array<projectIcon>
+}
