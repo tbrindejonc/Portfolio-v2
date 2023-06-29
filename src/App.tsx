@@ -6,6 +6,7 @@ import {isLight} from '@/utils/AppFuncs';
 import About from '@/components/about/About';
 import Experience from '@/components/experience/Experience';
 import Skills from '@/components/skills/Skills';
+import Projects from '@/components/projects/Projects';
 
 // context for app theme
 export const ThemeContext = createContext<theme>('light');
@@ -32,6 +33,7 @@ export default function App() {
           <About />
           <Experience />
           <Skills />
+          <Projects />
         </LangContext.Provider>
       </ThemeContext.Provider>
     </div>
