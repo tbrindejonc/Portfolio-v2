@@ -16,7 +16,7 @@ export default function Navbar({changeTheme}: Props) {
 
   return (
     <div id={'navbar'} className={'w-full h-20 z-10 fixed top-0 flex flex-row justify-between items-center px-2'}>
-      <img src='src/assets/images/pictures/photo_9.png' alt='me' className={'h-16 w-16 rounded-full'}/>
+      <img src='src/assets/images/pictures/navbar-pic.jpg' alt='me' className={'h-16 w-16 rounded-full object-cover object-top'}/>
       <div className={'flex flex-row items-center space-x-2'}>
         <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`}>
           {
