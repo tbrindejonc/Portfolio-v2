@@ -50,3 +50,32 @@ export type homeTrad = {
   fr: homeText,
   en: homeText
 }
+
+// text for about section
+export type aboutText = {
+  title: string,
+  firstPartOne: string,
+  firstSpanOne: string,
+  firstPartTwo: string,
+  firstSpanTwo: string,
+  secondPartOne: string,
+  secondSpanOne: string,
+  secondPartTwo: string,
+  thirdPartOne: string,
+  thirdSpanOne: string,
+  thirdPartTwo: string,
+  fourthPartOne: string,
+  fourthSpanOne: string,
+  fourthPartTwo: string,
+  fourthSpanTwo: string,
+  fourthPartThree: string,
+  fourthSpanThree: string,
+  fourthPartFour: string,
+  fourthSpanFour: string
+}
+
+// different traductions for about section
+export type aboutTrad = {
+  fr: aboutText,
+  en: aboutText
+}
