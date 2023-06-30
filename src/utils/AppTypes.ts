@@ -35,3 +35,18 @@ export type projectLinkIcon = {
   name: string,
   link: string
 }
+
+// text for home section
+export type homeText = {
+  name: string,
+  firstPart: string,
+  firstSpan: string,
+  secondPart: string,
+  secondSpan: string
+}
+
+// different traductions for home section
+export type homeTrad = {
+  fr: homeText,
+  en: homeText
+}
