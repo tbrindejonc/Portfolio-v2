@@ -25,11 +25,16 @@ export default function App() {
     isLight(theme) ? setTheme('dark') : setTheme('light');
   };
 
+  // function to change lang in components
+  const changeLang = () => {
+    lang === 'fr' ? setLang('en') : setLang('fr');
+  };
+
   return (
     <div id='App' className={'font-Wix'}>
       <ThemeContext.Provider value={theme}>
         <LangContext.Provider value={lang}>
-          <Navbar changeTheme={changeTheme}/>
+          <Navbar changeTheme={changeTheme} changeLang={changeLang}/>
           <Home />
           <About />
           <Experience />
