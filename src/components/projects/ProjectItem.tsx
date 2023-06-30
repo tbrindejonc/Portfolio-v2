@@ -22,7 +22,7 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
       <div className={`project-item-base ${isCurrentLight ? 'project-item-light' : 'project-item-dark'} 
         ${isActive ? 'h-[70vh]' : 'h-[27vh]'} overflow-hidden`}>
         <h2 className={'text-2xl font-bold'}>{name}</h2>
-        <img src={gif} alt={name} className={'w-2/3 h-auto'}/>
+        <img src={gif} alt={name} className={'w-auto h-[13vh]'}/>
         {
           isCurrentLight ?
             <img src='src/assets/images/projects/utils/arrow-light.png' alt='arrow'
