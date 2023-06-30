@@ -62,7 +62,7 @@ export const allViews = {
 export const projects: Array<project> = [
   {
     name: 'Pinit',
-    gif: '../src/assets/images/projects/utils/placeholder.gif',
+    gif: '../src/assets/images/projects/utils/pinit.gif',
     description: 'Pinit est un outil en ligne de commandes qui permet de rapidement créer et commencer un projet web Javascript. ' +
       'Il est également possible d’utiliser une template de projet pour commencer encore plus vite.',
     techs: [
@@ -79,7 +79,7 @@ export const projects: Array<project> = [
   },
   {
     name: 'Portfolio V1',
-    gif: '../src/assets/images/projects/utils/placeholder.gif',
+    gif: '../src/assets/images/projects/utils/portfolio-v1.gif',
     description: 'La première version de mon portfolio était mon premier pas dans l’univers de React Js et l’utilisation  de Tailwind CSS.  ' +
       'Il est hébergé avec Firebase, et toujours consultable pour  voir la progression entre la V1 et la  V2.',
     techs: [
@@ -101,7 +101,7 @@ export const projects: Array<project> = [
   },
   {
     name: 'Spotifree',
-    gif: '../src/assets/images/projects/utils/placeholder.gif',
+    gif: '../src/assets/images/projects/utils/spotifree.gif',
     description: 'Spotifree est un site web de streaming de musique, programmé en PHP. Le style est fait avec Tailwind CSS. ' +
       'Ce projet était mon premier site web, et je voulais essayer d\'utiliser Tailwind CSS.',
     techs: [
@@ -117,7 +117,7 @@ export const projects: Array<project> = [
   },
   {
     name: 'UHC Run',
-    gif: '../src/assets/images/projects/utils/placeholder.gif',
+    gif: '../src/assets/images/projects/utils/uhc-run.gif',
     description: 'L\'UHC Run est mon premier projet de code, programmé en Java. Il s\'agit d\'un plugin minecraft permettant de jouer des parties' +
       ' en multijoueur avec plusieurs ajouts au jeu de base.',
     techs: [
