@@ -90,4 +90,20 @@
     .contact-link {
         @apply flex flex-row items-center justify-between w-full h-[15vh]
     }
+
+    .navbar-menu-base {
+        @apply rounded-xl border-2 absolute w-[70vw] h-fit top-[110%] right-0 flex flex-col items-end justify-between text-xl
+    }
+
+    .navbar-menu-light {
+        @apply border-primary-dark bg-violet-dark text-primary-dark
+    }
+
+    .navbar-menu-dark {
+        @apply border-primary-light bg-pink-light text-primary-light
+    }
+
+    .navbar-menu-item-base {
+        @apply h-[7vh] flex flex-col justify-center items-end w-full pe-2
+    }
 }
