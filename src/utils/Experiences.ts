@@ -5,13 +5,25 @@ export const workExperiences: Array<experience> = [
   {
     company: 'GIBRALTAZ',
     logo: '../src/assets/images/experience/gibraltaz.png',
-    period: 'Février-Avril 2023',
-    role: 'Développeur web (stage)'
+    period: {
+      fr: 'Février-Avril 2023',
+      en: 'February-April 2023'
+    },
+    role: {
+      fr: 'Développeur web (stage)',
+      en: 'Web Developer (placement)'
+    }
   },
   {
     company: 'PLUS À VENIR',
     logo: '../src/assets/images/experience/soon.png',
-    period: 'Revenez plus tard',
-    role: 'Développe mes projets'
+    period: {
+      fr: 'Revenez plus tard',
+      en: 'Come back later'
+    },
+    role: {
+      fr: 'Développe mes projets',
+      en: 'Developing my projects'
+    }
   }
 ];
