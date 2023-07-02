@@ -1,14 +1,20 @@
 import {skillIcons, skillSectionsIcons} from '@/utils/SkillsIcons';
 import {useContext, useState} from 'react';
-import {ThemeContext} from '@/App';
-import {projectIcon, theme} from '@/utils/AppTypes';
+import {LangContext, ThemeContext} from '@/App';
+import {lang, projectIcon, theme} from '@/utils/AppTypes';
 import {isLight} from '@/utils/AppFuncs';
+import {skillsContent} from '@/utils/TextContent';
 
 export default function Skills() {
   // get the theme from provider
   const theme = useContext<theme>(ThemeContext);
   // check if the current theme is light
   const isCurrentLight = isLight(theme);
+
+  // get the lang from provider
+  const lang = useContext<lang>(LangContext);
+  // get current traduction
+  const currentTrad = skillsContent[lang];
 
   // selected section
   const [selected, setSelected] = useState<number>(0);
@@ -63,7 +69,7 @@ export default function Skills() {
           <img src='src/assets/images/sections/skills-light.png' alt='skills' className={'w-[5rem] h-auto pt-12'}/>
           :  <img src='src/assets/images/sections/skills-dark.png' alt='skills' className={'w-[5rem] h-auto pt-12'}/>
       }
-      <h1 className={`text-5xl font-bold text-center ${isCurrentLight ? 'text-green-dark' : 'text-green-light'}`}>Mes compétences</h1>
+      <h1 className={`text-5xl font-bold text-center ${isCurrentLight ? 'text-green-dark' : 'text-green-light'}`}>{currentTrad.title}</h1>
       <div className={'w-5/6 h-3/5 flex flex-col items-center justify-center'}>
         <div className={'w-full flex flex-row justify-between'}>
           {
