@@ -8,8 +8,14 @@ export type lang = 'fr' | 'en';
 export type experience = {
   company: string,
   logo: string,
-  period: string,
-  role: string
+  period: {
+    fr: string,
+    en: string
+  },
+  role: {
+    fr: string,
+    en: string
+  }
 }
 
 // skill section icon
