@@ -74,12 +74,22 @@ export const experienceContent : experienceTrad = {
   }
 };
 
-// experience section traductions
+// skills section traductions
 export const skillsContent : skillsTrad = {
   fr: {
     title: 'Mes Compétences'
   },
   en: {
     title: 'My Skills'
+  }
+};
+
+// projects section traductions
+export const projectsContent : skillsTrad = {
+  fr: {
+    title: 'Mes Projets'
+  },
+  en: {
+    title: 'My Projects'
   }
 };
