@@ -1,6 +1,6 @@
 import {useContext, useState} from 'react';
-import {experience, theme} from '@/utils/AppTypes';
-import {ThemeContext} from '@/App';
+import {experience, lang, theme} from '@/utils/AppTypes';
+import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 
 export default function WorkItem({company, logo, period, role}: experience) {
@@ -8,6 +8,8 @@ export default function WorkItem({company, logo, period, role}: experience) {
   const theme = useContext<theme>(ThemeContext);
   // check if current theme is light
   const isCurrentLight = isLight(theme);
+  // get the lang from provider
+  const lang = useContext<lang>(LangContext);
 
   // state of slider
   const [isActive, setActive] = useState<boolean>(false);
@@ -46,7 +48,7 @@ export default function WorkItem({company, logo, period, role}: experience) {
                 <img src='src/assets/images/experience/clock-light.png' alt='clock' className={'w-12 h-auto'}/>
                 :  <img src='src/assets/images/experience/clock-dark.png' alt='clock' className={'w-12 h-auto'}/>
             }
-            <h2 className={'font-bold'}>{period}</h2>
+            <h2 className={'font-bold'}>{period[lang]}</h2>
           </div>
           <div className={'flex flex-row items-center space-x-3'}>
             {
@@ -54,7 +56,7 @@ export default function WorkItem({company, logo, period, role}: experience) {
                 <img src='src/assets/images/experience/job-light.png' alt='job' className={'w-10 h-auto'}/>
                 :  <img src='src/assets/images/experience/job-dark.png' alt='job' className={'w-10 h-auto'}/>
             }
-            <h2>{role}</h2>
+            <h2>{role[lang]}</h2>
           </div>
         </div>
         {
