@@ -1,4 +1,4 @@
-import {aboutTrad, homeTrad} from '@/utils/AppTypes';
+import {aboutTrad, experienceTrad, homeTrad} from '@/utils/AppTypes';
 
 // home section traductions
 export const homeContent: homeTrad = {
@@ -63,3 +63,13 @@ export const aboutContent: aboutTrad = {
     fourthSpanFour: 'video games'
   }
 };
+
+// experience section traductions
+export const experienceContent : experienceTrad = {
+  fr: {
+    title: 'Mon Expérience'
+  },
+  en: {
+    title: 'My Experience'
+  }
+}
