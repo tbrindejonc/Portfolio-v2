@@ -29,7 +29,10 @@ export type projectIcon = {
 export type project = {
   name: string,
   gif: string,
-  description: string,
+  description: {
+    fr: string,
+    en: string
+  },
   techs: Array<projectIcon>,
   views: Array<projectLinkIcon>
 }
