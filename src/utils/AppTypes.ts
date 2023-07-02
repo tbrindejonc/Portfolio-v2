@@ -85,3 +85,14 @@ export type aboutTrad = {
   fr: aboutText,
   en: aboutText
 }
+
+// text for experience section
+export type experienceText = {
+  title: string
+}
+
+// different traductions for experience section
+export type experienceTrad = {
+  fr: experienceText,
+  en: experienceText
+}
