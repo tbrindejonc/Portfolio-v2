@@ -121,3 +121,14 @@ export type projectsTrad = {
   fr: projectsText,
   en: projectsText
 }
+
+// text for contact section
+export type contactText = {
+  title: string
+}
+
+// different traductions for contact section
+export type contactTrad = {
+  fr: contactText,
+  en: contactText
+}
