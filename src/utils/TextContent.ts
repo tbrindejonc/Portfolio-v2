@@ -1,4 +1,4 @@
-import {aboutTrad, experienceTrad, homeTrad} from '@/utils/AppTypes';
+import {aboutTrad, experienceTrad, homeTrad, skillsTrad} from '@/utils/AppTypes';
 
 // home section traductions
 export const homeContent: homeTrad = {
@@ -72,4 +72,14 @@ export const experienceContent : experienceTrad = {
   en: {
     title: 'My Experience'
   }
-}
+};
+
+// experience section traductions
+export const skillsContent : skillsTrad = {
+  fr: {
+    title: 'Mes Compétences'
+  },
+  en: {
+    title: 'My Skills'
+  }
+};
