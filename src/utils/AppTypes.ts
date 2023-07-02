@@ -132,3 +132,20 @@ export type contactTrad = {
   fr: contactText,
   en: contactText
 }
+
+// text and name for a navbar link
+export type navbarLink = {
+  name: string,
+  link: string
+}
+
+// text for navbar section
+export type navbarText = {
+  sections: Array<navbarLink>
+}
+
+// different traductions for navbar section
+export type navbarTrad = {
+  fr: navbarText,
+  en: navbarText
+}
