@@ -57,7 +57,8 @@ export default function Navbar({changeTheme, changeLang}: Props) {
               <img src='src/assets/images/navbar/selector-light.png' alt='lang-icon' />
               :  <img src='src/assets/images/navbar/selector-dark.png' alt='lang-icon' />
           }
-          <div className={`navbar-menu-base ${isCurrentLight ? 'navbar-menu-light' : 'navbar-menu-dark'} ${isActive ? 'block' : 'hidden'}`}>
+          <div className={`navbar-menu-base ${isCurrentLight ? 'navbar-menu-light' : 'navbar-menu-dark'} 
+            ${isActive ? 'opacity-100 visible right-0' : 'opacity-0 invisible right-[-500%]'}`}>
             {
               currentTrad.sections.map((section, index) => {
                 return <a key={index} href={`#${section.link}`}

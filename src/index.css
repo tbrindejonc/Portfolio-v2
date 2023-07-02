@@ -92,7 +92,8 @@
     }
 
     .navbar-menu-base {
-        @apply rounded-xl border-2 absolute w-[70vw] h-fit top-[110%] right-0 flex flex-col items-end justify-between text-xl
+        @apply rounded-xl border-2 absolute w-[70vw] h-fit top-[110%] flex flex-col items-end justify-between text-xl
+            transition-all duration-300 transform
     }
 
     .navbar-menu-light {
