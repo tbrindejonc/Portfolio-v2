@@ -1,6 +1,6 @@
-import {project, theme} from '@/utils/AppTypes';
+import {lang, project, theme} from '@/utils/AppTypes';
 import {useContext, useState} from 'react';
-import {ThemeContext} from '@/App';
+import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 
 export default function ProjectItem({name, gif, description, views, techs}: project) {
@@ -8,6 +8,8 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
   const theme = useContext<theme>(ThemeContext);
   // check if the current theme is light
   const isCurrentLight = isLight(theme);
+  // get the lang from provider
+  const lang = useContext<lang>(LangContext);
 
   // activation state of the project item
   const [isActive, setActive] = useState<boolean>(false);
@@ -37,7 +39,7 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
             })
           }
         </div>
-        <p>{description}</p>
+        <p>{description[lang]}</p>
         <div className={`w-full rounded-xl flex flex-row items-center justify-around ${isCurrentLight ? 'bg-pink-light' : 'bg-green-dark'}`}>
           {
             views.map((view, index) => {
