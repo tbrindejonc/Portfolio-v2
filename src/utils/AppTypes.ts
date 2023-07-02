@@ -96,3 +96,14 @@ export type experienceTrad = {
   fr: experienceText,
   en: experienceText
 }
+
+// text for skills section
+export type skillsText = {
+  title: string
+}
+
+// different traductions for skills section
+export type skillsTrad = {
+  fr: skillsText,
+  en: skillsText
+}
