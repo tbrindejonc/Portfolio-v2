@@ -1,4 +1,4 @@
-import {aboutTrad, contactTrad, experienceTrad, homeTrad, projectsTrad, skillsTrad} from '@/utils/AppTypes';
+import {aboutTrad, contactTrad, experienceTrad, homeTrad, navbarTrad, projectsTrad, skillsTrad} from '@/utils/AppTypes';
 
 // home section traductions
 export const homeContent: homeTrad = {
@@ -101,5 +101,65 @@ export const contactContent : contactTrad = {
   },
   en: {
     title: 'Contact Me'
+  }
+};
+
+// navbar menu traductions
+export const navbarContent : navbarTrad = {
+  fr: {
+    sections: [
+      {
+        name: 'Accueil',
+        link: 'home'
+      },
+      {
+        name: 'Qui Suis-je ?',
+        link: 'about'
+      },
+      {
+        name: 'Mon Expérience',
+        link: 'experience'
+      },
+      {
+        name: 'Mes Compétences',
+        link: 'skills'
+      },
+      {
+        name: 'Mes Projets',
+        link: 'projects'
+      },
+      {
+        name: 'Contactez-moi',
+        link: 'contact'
+      }
+    ]
+  },
+  en: {
+    sections: [
+      {
+        name: 'Home',
+        link: 'home'
+      },
+      {
+        name: 'Who Am I ?',
+        link: 'about'
+      },
+      {
+        name: 'My Experience',
+        link: 'experience'
+      },
+      {
+        name: 'My Skills',
+        link: 'skills'
+      },
+      {
+        name: 'My Projects',
+        link: 'projects'
+      },
+      {
+        name: 'Contact Me',
+        link: 'contact'
+      }
+    ]
   }
 };
