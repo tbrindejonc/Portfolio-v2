@@ -107,3 +107,14 @@ export type skillsTrad = {
   fr: skillsText,
   en: skillsText
 }
+
+// text for projects section
+export type projectsText = {
+  title: string
+}
+
+// different traductions for projects section
+export type projectsTrad = {
+  fr: projectsText,
+  en: projectsText
+}
