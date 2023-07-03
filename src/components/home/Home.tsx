@@ -16,10 +16,11 @@ export default function Home(){
   const currentTrad = homeContent[lang];
 
   return (
-    <div id={'home'} className={`home-base-mobile ${isCurrentLight ? 'home-light-mobile' : 'home-dark-mobile'}`}>
-      <h1 className={`text-6xl font-bold text-center ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>{currentTrad.name}</h1>
-      <img src='src/assets/images/sections/developer.png' alt='developer' className={'w-40 h-40'}/>
-      <h2 className={`text-5xl w-2/3 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>{currentTrad.firstPart}
+    <div id={'home'} className={`home-base-mobile 
+      ${isCurrentLight ? 'home-light-mobile xl:home-light-desktop' : 'home-dark-mobile xl:home-dark-desktop'}`}>
+      <h1 className={`text-6xl font-bold text-center xl:text-9xl ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>{currentTrad.name}</h1>
+      <img src='src/assets/images/sections/developer.png' alt='developer' className={'w-40 h-auto xl:w-60'}/>
+      <h2 className={`text-5xl w-2/3 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'} xl:home-text-desktop`}>{currentTrad.firstPart}
         <span className={`font-bold ${isCurrentLight ? 'text-pink-light' : 'text-primary-dark'}`}>{currentTrad.firstSpan}</span>
         {currentTrad.secondPart}<span className={`font-bold ${isCurrentLight ? 'text-pink-light' : 'text-primary-dark'}`}>
           {currentTrad.secondSpan}</span>

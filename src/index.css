@@ -107,4 +107,12 @@
     .navbar-menu-item-base {
         @apply h-[7vh] flex flex-col justify-center items-end w-full pe-2
     }
+
+    .home-light-desktop {
+        @apply bg-home-light-desktop
+    }
+
+    .home-text-desktop {
+        @apply w-2/5 leading-snug text-center
+    }
 }
