@@ -20,7 +20,7 @@ export default function WorkItem({company, logo, period, role}: experience) {
   };
 
   return (
-    <div className={`w-full flex flex-col items-center overflow-hidden relative ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'}`}>
+    <div className={`w-full flex flex-col items-center overflow-hidden relative ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'} xl:hidden`}>
       <div className={`experience-item-base-mobile ${isCurrentLight ? 'from-violet-dark to-green-dark border-primary-light' : 
         'from-pink-light to-green-light border-primary-dark'}`} onClick={handleActivation}>
         <div className={`flex flex-row items-center space-x-4 transform duration-200 ${isActive ? 'translate-x-[-150%]' : ''}`}>
