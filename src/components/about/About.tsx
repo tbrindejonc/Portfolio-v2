@@ -16,24 +16,25 @@ export default function About() {
   const currentTrad = aboutContent[lang];
 
   return (
-    <div id={'about'} className={`about-base-mobile ${isCurrentLight ? 'bg-pink-light text-violet-dark' : 'bg-violet-dark text-pink-light'}`}>
-      <img src='src/assets/images/pictures/about-pic.jpg' alt='me' className={'w-20 h-20 rounded-full mt-14 object-cover object-top'}/>
+    <div id={'about'} className={`about-base-mobile 
+      ${isCurrentLight ? 'bg-pink-light text-violet-dark' : 'bg-violet-dark text-pink-light'} xl:space-y-8`}>
+      <img src='src/assets/images/pictures/about-pic.jpg' alt='me' className={'about-image-mobile xl:w-60 xl:h-60'}/>
       <h1 className={'text-5xl pb-8 pt-2 font-bold'}>{currentTrad.title}</h1>
-      <div className={'flex flex-col items-center space-y-4 w-2/3'}>
+      <div className={'flex flex-col items-center space-y-4 w-2/3 xl:about-paragraphs-desktop'}>
         <p>{currentTrad.firstPartOne}
           <span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>{currentTrad.firstSpanOne}</span>
           {currentTrad.firstPartTwo}
           <span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>{currentTrad.firstSpanTwo}</span>.
         </p>
-        <p>{currentTrad.secondPartOne}
+        <p className={'xl:text-center'}>{currentTrad.secondPartOne}
           <span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>{currentTrad.secondSpanOne}</span>.
           {currentTrad.secondPartTwo}
         </p>
-        <p>{currentTrad.thirdPartOne}
+        <p className={'xl:text-center'}>{currentTrad.thirdPartOne}
           <span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>{currentTrad.thirdSpanOne}</span>.
           {currentTrad.thirdPartTwo}
         </p>
-        <p>{currentTrad.fourthPartOne}<span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>
+        <p className={'xl:text-end'}>{currentTrad.fourthPartOne}<span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>
           {currentTrad.fourthSpanOne}</span>{currentTrad.fourthPartTwo}
         <span className={`font-bold ${isCurrentLight ? 'text-primary-light' : 'text-primary-dark'}`}>{currentTrad.fourthSpanTwo}</span>
         {currentTrad.fourthPartThree}
