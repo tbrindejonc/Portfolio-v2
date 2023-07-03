@@ -62,20 +62,21 @@ export default function Skills() {
   };
 
   return (
-    <div id={'skills'} className={`h-screen w-full flex flex-col items-center justify-center space-y-4 
+    <div id={'skills'} className={`h-screen w-full flex flex-col items-center justify-center space-y-4 xl:space-y-8
       ${isCurrentLight ? 'bg-green-light' : 'bg-green-dark'}`}>
       {
         isCurrentLight ?
-          <img src='src/assets/images/sections/skills-light.png' alt='skills' className={'w-[5rem] h-auto pt-12'}/>
-          :  <img src='src/assets/images/sections/skills-dark.png' alt='skills' className={'w-[5rem] h-auto pt-12'}/>
+          <img src='src/assets/images/sections/skills-light.png' alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
+          :  <img src='src/assets/images/sections/skills-dark.png' alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
       }
-      <h1 className={`text-5xl font-bold text-center ${isCurrentLight ? 'text-green-dark' : 'text-green-light'}`}>{currentTrad.title}</h1>
-      <div className={'w-5/6 h-3/5 flex flex-col items-center justify-center'}>
-        <div className={'w-full flex flex-row justify-between'}>
+      <h1 className={`text-5xl font-bold text-center ${isCurrentLight ? 'text-green-dark' : 'text-green-light'} xl:text-6xl`}>
+        {currentTrad.title}</h1>
+      <div className={'w-5/6 h-3/5 flex flex-col items-center justify-center xl:flex-row xl:justify-center'}>
+        <div className={'w-full flex flex-row justify-between xl:flex-col xl:w-fit xl:h-full xl:items-end'}>
           {
             skillSectionsIcons.map((skillSectionsIcon, index) => {
               return (
-                <div key={index} className={`skill-section-base ${getSectionClass(index)}`} onClick={() => {
+                <div key={index} className={`skill-section-base ${getSectionClass(index)} xl:w-32 xl:h-32 xl:rounded-xl me-2`} onClick={() => {
                   setSelected(index);
                 }}>
                   <img src={getCurrentIcon(skillSectionsIcon, index)} alt={skillSectionsIcon.name}/>
@@ -84,14 +85,14 @@ export default function Skills() {
             })
           }
         </div>
-        <div className={`w-full h-full border-2 rounded-b-xl grid grid-cols-2
+        <div className={`w-full h-full border-2 rounded-b-xl grid grid-cols-2 xl:w-3/5 xl:rounded-xl
           ${isCurrentLight ? 'border-primary-dark bg-violet-dark text-green-light' : 'border-violet-dark bg-green-light text-green-dark'}`}>
           {
             skillIcons[selected].map((item, index) => {
               return (
-                <div key={index} className={'flex flex-col items-center justify-center'}>
-                  <img src={isCurrentLight ? item.light : item.dark} alt={item.name} className={'w-24 h-auto'}/>
-                  <h3 className={'text-xl'}>{item.name}</h3>
+                <div key={index} className={'flex flex-col items-center justify-center xl:flex-row xl:justify-start xl:ps-24'}>
+                  <img src={isCurrentLight ? item.light : item.dark} alt={item.name} className={'w-24 h-auto xl:w-32'}/>
+                  <h3 className={'text-xl xl:text-4xl xl:ps-8'}>{item.name}</h3>
                 </div>
               );
             })
