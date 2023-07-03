@@ -18,7 +18,9 @@ export default {
       },
       backgroundImage: {
         'home-light-mobile': 'url(\'assets/images/background/home-light-mobile.png\')',
-        'home-dark-mobile': 'url(\'assets/images/background/home-dark-mobile.png\')'
+        'home-dark-mobile': 'url(\'assets/images/background/home-dark-mobile.png\')',
+        'home-light-desktop': 'url(\'assets/images/background/home-light-desktop.png\')',
+        'home-dark-desktop': 'url(\'assets/images/background/home-dark-desktop.png\')'
       },
       fontFamily: {
         'Wix': 'Wix'
