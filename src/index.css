@@ -176,4 +176,17 @@
     .experience-carousel-arrow-background {
         @apply bg-pink-light bg-opacity-0 hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full relative z-10 m-4 cursor-pointer
     }
+
+    .projects-carousel-arrow-background {
+        @apply bg-pink-light bg-opacity-0 hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full z-10 m-4 cursor-pointer
+            absolute top-4
+    }
+
+    .projects-carousel-arrow-right {
+        @apply w-14 h-auto absolute top-2 right-2 ps-4
+    }
+
+    .projects-carousel-arrow-left {
+        @apply w-14 h-auto absolute top-2 left-2 rotate-180 ps-4
+    }
 }
