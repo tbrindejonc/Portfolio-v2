@@ -149,15 +149,15 @@
     }
 
     .navbar-item-desktop {
-        @apply rounded-xl border-2 w-[12vw] h-10 pt-1 text-center text-xl
+        @apply rounded-xl border-2 w-[12vw] h-10 pt-1 text-center text-xl hover:shadow-2xl transition duration-200 transform hover:scale-110
     }
 
     .navbar-item-desktop-light {
-        @apply border-purple-dark bg-pink-light text-primary-light
+        @apply border-purple-dark bg-pink-light text-primary-light shadow-violet-dark
     }
 
     .navbar-item-desktop-dark {
-        @apply border-violet-light bg-violet-dark text-primary-dark
+        @apply border-violet-light bg-violet-dark text-primary-dark shadow-pink-light
     }
 
     .contact-icon {
