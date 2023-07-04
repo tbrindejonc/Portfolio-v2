@@ -1,10 +1,13 @@
 import {experience} from '@/utils/AppTypes';
 
+import gibraltaz from '@/assets/images/experience/gibraltaz.png';
+import defaultLogo from '@/assets/images/experience/soon.png';
+
 // work experiences
 export const workExperiences: Array<experience> = [
   {
     company: 'GIBRALTAZ',
-    logo: '../src/assets/images/experience/gibraltaz.png',
+    logo: gibraltaz,
     period: {
       fr: 'Février-Avril 2023',
       en: 'February-April 2023'
@@ -16,7 +19,7 @@ export const workExperiences: Array<experience> = [
   },
   {
     company: '',
-    logo: '../src/assets/images/experience/soon.png',
+    logo: defaultLogo,
     period: {
       fr: 'Revenez plus tard',
       en: 'Come back later'
