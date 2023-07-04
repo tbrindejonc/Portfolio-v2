@@ -159,4 +159,8 @@
     .navbar-item-desktop-dark {
         @apply border-violet-light bg-violet-dark text-primary-dark
     }
+
+    .contact-icon {
+        @apply w-20 h-auto xl:w-28
+    }
 }
