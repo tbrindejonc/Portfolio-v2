@@ -5,6 +5,7 @@ import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 import {lang, theme} from '@/utils/AppTypes';
 import {experienceContent} from '@/utils/TextContent';
+import WorkCarousel from '@/components/experience/WorkCarousel';
 
 export default function Experience() {
   // get current theme
@@ -32,6 +33,7 @@ export default function Experience() {
             period={workExperience.period} role={workExperience.role} />
         );
       })}
+      <WorkCarousel experiences={workExperiences} />
     </div>
   );
 }
