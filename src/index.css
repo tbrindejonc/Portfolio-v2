@@ -93,7 +93,7 @@
     }
 
     .contact-link {
-        @apply flex flex-row items-center justify-between w-full h-[15vh]
+        @apply flex flex-row items-center justify-between w-full h-[15vh] transform duration-500 hover:scale-110
     }
 
     .navbar-menu-base {
