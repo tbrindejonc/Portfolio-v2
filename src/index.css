@@ -147,4 +147,16 @@
     .project-carousel-dark {
         @apply from-green-light to-pink-light border-violet-dark
     }
+
+    .navbar-item-desktop {
+        @apply rounded-xl border-2 w-[12vw] h-10 pt-1 text-center text-xl
+    }
+
+    .navbar-item-desktop-light {
+        @apply border-purple-dark bg-pink-light text-primary-light
+    }
+
+    .navbar-item-desktop-dark {
+        @apply border-violet-light bg-violet-dark text-primary-dark
+    }
 }
