@@ -174,12 +174,11 @@
     }
 
     .experience-carousel-arrow-background {
-        @apply bg-pink-light bg-opacity-0 hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full relative z-10 m-4 cursor-pointer
+        @apply hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full relative z-10 m-4 cursor-pointer
     }
 
     .projects-carousel-arrow-background {
-        @apply bg-pink-light bg-opacity-0 hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full z-10 m-4 cursor-pointer
-            absolute top-4
+        @apply hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full z-10 m-4 cursor-pointer absolute top-4
     }
 
     .projects-carousel-arrow-right {

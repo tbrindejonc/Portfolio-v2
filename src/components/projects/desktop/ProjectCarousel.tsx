@@ -33,7 +33,8 @@ export default function ProjectCarousel({projects}: Props){
   return (
     <div className={`hidden w-full flex-col items-center h-3/5 ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'} xl:flex`}>
       <div className={`project-carousel ${isCurrentLight ? 'project-carousel-light' : 'project-carousel-dark'}`}>
-        <div className={'projects-carousel-arrow-background'} onClick={previous}>
+        <div className={`projects-carousel-arrow-background bg-opacity-0 
+          ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={previous}>
           {
             isCurrentLight ?
               <img src={arrowLight} alt='previous' className={'projects-carousel-arrow-left'}/>
@@ -45,7 +46,8 @@ export default function ProjectCarousel({projects}: Props){
             return <ProjectCarouselItem project={project} key={index} index={index} active={current} />;
           })
         }
-        <div className={'projects-carousel-arrow-background right-4'} onClick={next}>
+        <div className={`projects-carousel-arrow-background right-4 bg-opacity-0 
+          ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={next}>
           {
             isCurrentLight ?
               <img src={arrowLight} alt='previous' className={'projects-carousel-arrow-right'}/>

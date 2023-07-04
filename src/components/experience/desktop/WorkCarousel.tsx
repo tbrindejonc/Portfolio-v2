@@ -33,7 +33,7 @@ export default function WorkCarousel({experiences}: Props){
   return (
     <div className={`hidden w-full flex-col items-center h-3/5 ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'} xl:flex`}>
       <div className={`experience-carousel ${isCurrentLight ? 'experience-carousel-light' : 'experience-carousel-dark'}`}>
-        <div className={'experience-carousel-arrow-background'} onClick={previous}>
+        <div className={`experience-carousel-arrow-background bg-opacity-0 ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={previous}>
           {
             isCurrentLight ?
               <img src={arrowLight} alt='previous' className={'experience-carousel-arrow-left'} />
@@ -45,7 +45,7 @@ export default function WorkCarousel({experiences}: Props){
             return <CarouselItem key={index} index={index} active={current} experience={experience}/>;
           })
         }
-        <div className={'experience-carousel-arrow-background'} onClick={next}>
+        <div className={`experience-carousel-arrow-background bg-opacity-0 ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={next}>
           {
             isCurrentLight ?
               <img src={arrowLight} alt='previous' className={'experience-carousel-arrow-right'} />
