@@ -9,7 +9,7 @@
 
 @layer components {
     .navbar-item-background-mobile {
-        @apply h-16 w-16 rounded-full flex flex-col items-center justify-center
+        @apply h-16 w-16 rounded-full flex flex-col items-center justify-center hover:scale-110 transform duration-200 cursor-pointer
     }
 
     .navbar-item-mobile {
