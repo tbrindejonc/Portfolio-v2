@@ -47,6 +47,7 @@
 
     .skill-section-base {
         @apply w-[22%] h-16 flex flex-col items-center justify-center border-2 rounded-t-xl p-2
+            cursor-pointer hover:scale-90 transform duration-500
     }
 
     .skill-section-light-unselected {
