@@ -24,29 +24,29 @@ export default function Contact() {
           : <img src='src/assets/images/contact/contact-dark.png' alt='contact' className={'xl:w-40'}/>
       }
       <h1 className={`font-bold text-5xl ${isCurrentLight ? 'text-purple-dark' : 'text-violet-light'} xl:text-7xl`}>{currentTrad.title}</h1>
-      <div className={'w-5/6 xl:w-1/5'}>
+      <div className={'w-5/6 xl:w-2/5'}>
         <a href={'https://www.linkedin.com/in/timothee-brindejonc/'} className={`contact-link border-b-2 
           ${isCurrentLight ? 'border-green-dark' : 'border-green-light'}`}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/contact/linkedin-light.png' alt='linkedin' className={'w-20 h-auto xl:w-32'}/>
-              : <img src='src/assets/images/contact/linkedin-dark.png' alt='linkedin' className={'w-20 h-auto xl:w-32'}/>
+              <img src='src/assets/images/contact/linkedin-light.png' alt='linkedin' className={'contact-icon'}/>
+              : <img src='src/assets/images/contact/linkedin-dark.png' alt='linkedin' className={'contact-icon'}/>
           }
           <h2 className={`text-4xl ${isCurrentLight ? 'text-green-dark' : 'text-green-light'}`}>LinkedIn</h2>
         </a>
         <a href={'https://github.com/Timeuh'} className={`contact-link border-b-2 ${isCurrentLight ? 'border-violet-dark' : 'border-violet-light'}`}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/contact/github-light.png' alt='github' className={'w-20 h-auto xl:w-32'}/>
-              : <img src='src/assets/images/contact/github-dark.png' alt='github' className={'w-20 h-auto xl:w-32'}/>
+              <img src='src/assets/images/contact/github-light.png' alt='github' className={'contact-icon'}/>
+              : <img src='src/assets/images/contact/github-dark.png' alt='github' className={'contact-icon'}/>
           }
           <h2 className={`text-4xl ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>Github</h2>
         </a>
         <a href={'mailto:tbrindejonc@gmail.com'} className={'contact-link'}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/contact/mail-light.png' alt='email' className={'w-20 h-auto xl:w-32'}/>
-              : <img src='src/assets/images/contact/mail-dark.png' alt='email' className={'w-20 h-auto xl:w-32'}/>
+              <img src='src/assets/images/contact/mail-light.png' alt='email' className={'contact-icon'}/>
+              : <img src='src/assets/images/contact/mail-dark.png' alt='email' className={'contact-icon'}/>
           }
           <h2 className={`text-4xl ${isCurrentLight ? 'text-purple-dark' : 'text-violet-light'}`}>Email</h2>
         </a>
