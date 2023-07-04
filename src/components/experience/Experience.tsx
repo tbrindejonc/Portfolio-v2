@@ -1,11 +1,11 @@
-import WorkItem from '@/components/experience/WorkItem';
+import WorkItem from '@/components/experience/mobile/WorkItem';
 import {workExperiences} from '@/utils/Experiences';
 import {useContext} from 'react';
 import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 import {lang, theme} from '@/utils/AppTypes';
 import {experienceContent} from '@/utils/TextContent';
-import WorkCarousel from '@/components/experience/WorkCarousel';
+import WorkCarousel from '@/components/experience/desktop/WorkCarousel';
 
 export default function Experience() {
   // get current theme
