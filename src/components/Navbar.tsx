@@ -6,7 +6,7 @@ import {navbarContent} from '@/utils/TextContent';
 
 import me from '@/assets/images/pictures/navbar-pic.jpg';
 import langLight from '@/assets/images/navbar/lang-light.png';
-import langDark from '@/assets/images/navbar/lang-light.png';
+import langDark from '@/assets/images/navbar/lang-dark.png';
 import moon from '@/assets/images/navbar/moon.png';
 import sun from '@/assets/images/navbar/sun.png';
 import selectorLight from 'src/assets/images/navbar/selector-light.png';
