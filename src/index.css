@@ -135,4 +135,16 @@
     .experience-carousel-dark {
         @apply from-pink-light to-green-light border-primary-dark
     }
+
+    .project-carousel {
+        @apply w-4/6 h-full flex flex-row items-center justify-between rounded-xl relative overflow-hidden bg-gradient-to-b border-2
+    }
+
+    .project-carousel-light {
+        @apply from-green-dark to-violet-dark border-pink-light
+    }
+
+    .project-carousel-dark {
+        @apply from-green-light to-pink-light border-violet-dark
+    }
 }
