@@ -6,7 +6,7 @@ For the first time, I made a design before programming,
 and it really helped me find the design I wanted for the portfolio.
 
 If you want to see the live version, here it is :
-![Portfolio](https://img.shields.io/badge/Portfolio-purple?logo=react&logoColor=white&link=https%3A%2F%2Fportfolio.timeuh.live%2F)
+[![My Portfolio](https://img.shields.io/badge/Portfolio-purple?logo=react&logoColor=white)](https://portfolio.timeuh.live/)
 
 Otherwise, the code is right here.
 
