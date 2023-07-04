@@ -20,7 +20,7 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
   };
 
   return (
-    <div className={'flex flex-col items-center relative'} onClick={handleActivation}>
+    <div className={'flex flex-col items-center relative xl:hidden'} onClick={handleActivation}>
       <div className={`project-item-base ${isCurrentLight ? 'project-item-light' : 'project-item-dark'} 
         ${isActive ? 'h-[70vh]' : 'h-[27vh]'} overflow-hidden`}>
         <h2 className={'text-2xl font-bold'}>{name}</h2>
