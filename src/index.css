@@ -123,4 +123,16 @@
     .about-paragraphs-desktop {
         @apply flex-row space-y-0 justify-around space-x-16 text-3xl items-start w-3/4
     }
+
+    .experience-carousel {
+        @apply w-4/6 h-full flex flex-row items-center justify-between rounded-xl relative overflow-hidden bg-gradient-to-b border-2
+    }
+
+    .experience-carousel-light {
+        @apply from-violet-dark to-green-dark border-primary-light
+    }
+
+    .experience-carousel-dark {
+        @apply from-pink-light to-green-light border-primary-dark
+    }
 }
