@@ -36,6 +36,14 @@ export default function Navbar({changeTheme, changeLang}: Props) {
   return (
     <div id={'navbar'} className={'w-full h-20 z-10 fixed top-0 flex flex-row justify-between items-center px-2'}>
       <img src='src/assets/images/pictures/navbar-pic.jpg' alt='me' className={'h-16 w-16 rounded-full object-cover object-top'}/>
+      <div className={'hidden xl:flex flex-row items-center justify-around w-4/5'}>
+        {
+          currentTrad.sections.map((section, index) => {
+            return <a key={index} href={`#${section.link}`}
+              className={`navbar-item-desktop ${isCurrentLight ? 'navbar-item-desktop-light' : 'navbar-item-desktop-dark'}`}>{section.name}</a>;
+          })
+        }
+      </div>
       <div className={'flex flex-row items-center space-x-2'}>
         <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`} onClick={changeLang}>
           {
@@ -51,7 +59,8 @@ export default function Navbar({changeTheme, changeLang}: Props) {
               :  <img src='src/assets/images/navbar/sun.png' alt='lang-icon' className={'navbar-item-mobile'}/>
           }
         </div>
-        <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'} relative`} onClick={handleActivation}>
+        <div className={`navbar-item-background-mobile xl:hidden ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'} relative`}
+          onClick={handleActivation}>
           {
             isCurrentLight ?
               <img src='src/assets/images/navbar/selector-light.png' alt='lang-icon' />
