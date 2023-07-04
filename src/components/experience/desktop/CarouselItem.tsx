@@ -3,6 +3,13 @@ import {useContext} from 'react';
 import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 
+import companyLight from '@/assets/images/experience/company-light.png';
+import companyDark from '@/assets/images/experience/company-dark.png';
+import clockLight from '@/assets/images/experience/clock-light.png';
+import clockDark from '@/assets/images/experience/clock-dark.png';
+import jobLight from '@/assets/images/experience/job-light.png';
+import jobDark from '@/assets/images/experience/job-dark.png';
+
 type Props = {
   experience: experience,
   index: number,
@@ -50,8 +57,8 @@ export default function CarouselItem({experience, index, active}: Props){
         <div className={'flex flex-col items-center'}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/experience/company-light.png' alt={'company'} className={'w-32 h-auto'}/>
-              :  <img src='src/assets/images/experience/company-dark.png' alt={'company'} className={'w-32 h-auto'}/>
+              <img src={companyLight} alt={'company'} className={'w-32 h-auto'}/>
+              :  <img src={companyDark} alt={'company'} className={'w-32 h-auto'}/>
           }
           <h1 className={'text-4xl font-bold'}>{experience.company}</h1>
         </div>
@@ -61,16 +68,16 @@ export default function CarouselItem({experience, index, active}: Props){
         <div className={'flex flex-row items-center justify-center space-x-4 w-1/2'}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/experience/clock-light.png' alt={'duration'} className={'w-24 h-auto'}/>
-              :  <img src='src/assets/images/experience/clock-dark.png' alt={'duration'} className={'w-24 h-auto'}/>
+              <img src={clockLight} alt={'duration'} className={'w-24 h-auto'}/>
+              :  <img src={clockDark} alt={'duration'} className={'w-24 h-auto'}/>
           }
           <h1 className={'text-xl font-bold'}>{experience.period[lang]}</h1>
         </div>
         <div className={'flex flex-row items-center justify-center space-x-4 w-1/2'}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/experience/job-light.png' alt={'duration'} className={'w-20 h-auto'}/>
-              :  <img src='src/assets/images/experience/job-dark.png' alt={'duration'} className={'w-20 h-auto'}/>
+              <img src={jobLight} alt={'duration'} className={'w-20 h-auto'}/>
+              :  <img src={jobDark} alt={'duration'} className={'w-20 h-auto'}/>
           }
           <h1 className={'text-xl'}>{experience.role[lang]}</h1>
         </div>

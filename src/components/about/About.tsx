@@ -4,6 +4,8 @@ import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 import {aboutContent} from '@/utils/TextContent';
 
+import aboutPic from '@/assets/images/pictures/about-pic.jpg';
+
 export default function About() {
   // get current theme
   const theme = useContext<theme>(ThemeContext);
@@ -18,7 +20,7 @@ export default function About() {
   return (
     <div id={'about'} className={`about-base-mobile 
       ${isCurrentLight ? 'bg-pink-light text-violet-dark' : 'bg-violet-dark text-pink-light'} xl:space-y-8`}>
-      <img src='src/assets/images/pictures/about-pic.jpg' alt='me' className={'about-image-mobile xl:w-60 xl:h-60'}/>
+      <img src={aboutPic} alt='me' className={'about-image-mobile xl:w-60 xl:h-60'}/>
       <h1 className={'text-5xl pb-8 pt-2 font-bold'}>{currentTrad.title}</h1>
       <div className={'flex flex-col items-center space-y-4 w-2/3 xl:about-paragraphs-desktop'}>
         <p>{currentTrad.firstPartOne}

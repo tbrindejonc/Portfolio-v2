@@ -7,6 +7,9 @@ import {lang, theme} from '@/utils/AppTypes';
 import {experienceContent} from '@/utils/TextContent';
 import WorkCarousel from '@/components/experience/desktop/WorkCarousel';
 
+import workLight from '@/assets/images/sections/work-light.png';
+import workDark from '@/assets/images/sections/work-dark.png';
+
 export default function Experience() {
   // get current theme
   const theme = useContext<theme>(ThemeContext);
@@ -23,8 +26,8 @@ export default function Experience() {
       ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`}>
       {
         isCurrentLight ?
-          <img src='src/assets/images/sections/work-light.png' alt='work' className={'w-32 h-auto rounded-full xl:w-40'}/>
-          :  <img src='src/assets/images/sections/work-dark.png' alt='work' className={'w-32 h-auto rounded-full xl:w-40'}/>
+          <img src={workLight} alt='work' className={'w-32 h-auto rounded-full xl:w-40'}/>
+          :  <img src={workDark} alt='work' className={'w-32 h-auto rounded-full xl:w-40'}/>
       }
       <h1 className={`text-5xl font-bold text-center w-5/6 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'} pb-6
         xl:text-6xl`}>{currentTrad.title}</h1>

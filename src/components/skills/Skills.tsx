@@ -5,6 +5,9 @@ import {lang, projectIcon, theme} from '@/utils/AppTypes';
 import {isLight} from '@/utils/AppFuncs';
 import {skillsContent} from '@/utils/TextContent';
 
+import skillsLight from '@/assets/images/sections/skills-light.png';
+import skillsDark from '@/assets/images/sections/skills-dark.png';
+
 export default function Skills() {
   // get the theme from provider
   const theme = useContext<theme>(ThemeContext);
@@ -66,8 +69,8 @@ export default function Skills() {
       ${isCurrentLight ? 'bg-green-light' : 'bg-green-dark'}`}>
       {
         isCurrentLight ?
-          <img src='src/assets/images/sections/skills-light.png' alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
-          :  <img src='src/assets/images/sections/skills-dark.png' alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
+          <img src={skillsLight} alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
+          :  <img src={skillsDark} alt='skills' className={'w-[5rem] h-auto pt-12 xl:w-32'}/>
       }
       <h1 className={`text-5xl font-bold text-center ${isCurrentLight ? 'text-green-dark' : 'text-green-light'} xl:text-6xl`}>
         {currentTrad.title}</h1>

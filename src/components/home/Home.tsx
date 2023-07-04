@@ -4,6 +4,8 @@ import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 import {homeContent} from '@/utils/TextContent';
 
+import developer from '@/assets/images/sections/developer.png';
+
 export default function Home(){
   // get the theme from provider
   const theme = useContext<theme>(ThemeContext);
@@ -19,7 +21,7 @@ export default function Home(){
     <div id={'home'} className={`home-base-mobile 
       ${isCurrentLight ? 'home-light-mobile xl:home-light-desktop' : 'home-dark-mobile xl:home-dark-desktop'}`}>
       <h1 className={`text-6xl font-bold text-center xl:text-9xl ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}>{currentTrad.name}</h1>
-      <img src='src/assets/images/sections/developer.png' alt='developer' className={'w-40 h-auto xl:w-60'}/>
+      <img src={developer} alt='developer' className={'w-40 h-auto xl:w-60'}/>
       <h2 className={`text-5xl w-2/3 ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'} xl:home-text-desktop`}>{currentTrad.firstPart}
         <span className={`font-bold ${isCurrentLight ? 'text-pink-light' : 'text-primary-dark'}`}>{currentTrad.firstSpan}</span>
         {currentTrad.secondPart}<span className={`font-bold ${isCurrentLight ? 'text-pink-light' : 'text-primary-dark'}`}>

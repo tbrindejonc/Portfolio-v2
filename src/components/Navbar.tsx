@@ -4,6 +4,14 @@ import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 import {navbarContent} from '@/utils/TextContent';
 
+import me from '@/assets/images/pictures/navbar-pic.jpg';
+import langLight from '@/assets/images/navbar/lang-light.png';
+import langDark from '@/assets/images/navbar/lang-light.png';
+import moon from '@/assets/images/navbar/moon.png';
+import sun from '@/assets/images/navbar/sun.png';
+import selectorLight from 'src/assets/images/navbar/selector-light.png';
+import selectorDark from 'src/assets/images/navbar/selector-dark.png';
+
 // component props
 type Props = {
   changeTheme: () => void,
@@ -35,7 +43,7 @@ export default function Navbar({changeTheme, changeLang}: Props) {
 
   return (
     <div id={'navbar'} className={'w-full h-20 z-10 fixed top-0 flex flex-row justify-between items-center px-2'}>
-      <img src='src/assets/images/pictures/navbar-pic.jpg' alt='me' className={'h-16 w-16 rounded-full object-cover object-top'}/>
+      <img src={me} alt='me' className={'h-16 w-16 rounded-full object-cover object-top'}/>
       <div className={'hidden xl:flex flex-row items-center justify-around w-4/5'}>
         {
           currentTrad.sections.map((section, index) => {
@@ -48,23 +56,23 @@ export default function Navbar({changeTheme, changeLang}: Props) {
         <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`} onClick={changeLang}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/navbar/lang-light.png' alt='lang-icon' className={'navbar-item-mobile'}/>
-              :  <img src='src/assets/images/navbar/lang-dark.png' alt='lang-icon' className={'navbar-item-mobile'}/>
+              <img src={langLight} alt='lang-icon' className={'navbar-item-mobile'}/>
+              :  <img src={langDark} alt='lang-icon' className={'navbar-item-mobile'}/>
           }
         </div>
         <div className={`navbar-item-background-mobile ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'}`} onClick={changeTheme}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/navbar/moon.png' alt='lang-icon' className={'navbar-item-mobile'}/>
-              :  <img src='src/assets/images/navbar/sun.png' alt='lang-icon' className={'navbar-item-mobile'}/>
+              <img src={moon} alt='lang-icon' className={'navbar-item-mobile'}/>
+              :  <img src={sun} alt='lang-icon' className={'navbar-item-mobile'}/>
           }
         </div>
         <div className={`navbar-item-background-mobile xl:hidden ${isCurrentLight ? 'bg-violet-dark' : 'bg-pink-light'} relative`}
           onClick={handleActivation}>
           {
             isCurrentLight ?
-              <img src='src/assets/images/navbar/selector-light.png' alt='lang-icon' />
-              :  <img src='src/assets/images/navbar/selector-dark.png' alt='lang-icon' />
+              <img src={selectorLight} alt='lang-icon' />
+              :  <img src={selectorDark} alt='lang-icon' />
           }
           <div className={`navbar-menu-base ${isCurrentLight ? 'navbar-menu-light' : 'navbar-menu-dark'} 
             ${isActive ? 'opacity-100 visible right-0' : 'opacity-0 invisible right-[-500%]'}`}>

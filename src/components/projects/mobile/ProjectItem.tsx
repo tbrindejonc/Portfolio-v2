@@ -3,6 +3,9 @@ import {useContext, useState} from 'react';
 import {LangContext, ThemeContext} from '@/App';
 import {isLight} from '@/utils/AppFuncs';
 
+import arrowLight from '@/assets/images/projects/utils/arrow-light.png';
+import arrowDark from '@/assets/images/projects/utils/arrow-dark.png';
+
 export default function ProjectItem({name, gif, description, views, techs}: project) {
   // get the theme from provider
   const theme = useContext<theme>(ThemeContext);
@@ -27,10 +30,8 @@ export default function ProjectItem({name, gif, description, views, techs}: proj
         <img src={gif} alt={name} className={'w-auto h-[13vh]'}/>
         {
           isCurrentLight ?
-            <img src='src/assets/images/projects/utils/arrow-light.png' alt='arrow'
-              className={`${isActive ? 'project-arrow-active' : 'project-arrow-inactive'}`}/>
-            : <img src='src/assets/images/projects/utils/arrow-dark.png' alt='arrow'
-              className={`${isActive ? 'project-arrow-active' : 'project-arrow-inactive'}`}/>
+            <img src={arrowLight} alt='arrow' className={`${isActive ? 'project-arrow-active' : 'project-arrow-inactive'}`}/>
+            : <img src={arrowDark} alt='arrow' className={`${isActive ? 'project-arrow-active' : 'project-arrow-inactive'}`}/>
         }
         <div className={`w-full rounded-xl flex flex-row items-center justify-around ${isCurrentLight ? 'bg-green-light' : 'bg-violet-dark'}`}>
           {

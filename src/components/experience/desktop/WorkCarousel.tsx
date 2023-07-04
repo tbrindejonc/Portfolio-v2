@@ -4,6 +4,9 @@ import {useContext, useState} from 'react';
 import {isLight} from '@/utils/AppFuncs';
 import CarouselItem from '@/components/experience/desktop/CarouselItem';
 
+import arrowLight from '@/assets/images/experience/arrow-light.png';
+import arrowDark from '@/assets/images/experience/arrow-dark.png';
+
 type Props = {
   experiences: Array<experience>,
 }
@@ -32,9 +35,9 @@ export default function WorkCarousel({experiences}: Props){
       <div className={`experience-carousel ${isCurrentLight ? 'experience-carousel-light' : 'experience-carousel-dark'}`}>
         {
           isCurrentLight ?
-            <img src='src/assets/images/experience/arrow-light.png' alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
+            <img src={arrowLight} alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
               onClick={previous}/>
-            :  <img src='src/assets/images/experience/arrow-dark.png' alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
+            :  <img src={arrowDark} alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
               onClick={previous}/>
         }
         {
@@ -44,9 +47,9 @@ export default function WorkCarousel({experiences}: Props){
         }
         {
           isCurrentLight ?
-            <img src='src/assets/images/experience/arrow-light.png' alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
+            <img src={arrowLight} alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
               onClick={next}/>
-            :  <img src='src/assets/images/experience/arrow-dark.png' alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
+            :  <img src={arrowDark} alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
               onClick={next}/>
         }
       </div>

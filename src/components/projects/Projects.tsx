@@ -7,6 +7,9 @@ import {isLight} from '@/utils/AppFuncs';
 import {projectsContent} from '@/utils/TextContent';
 import ProjectCarousel from '@/components/projects/desktop/ProjectCarousel';
 
+import projectsLight from '@/assets/images/projects/utils/projects-light.png';
+import projectsDark from '@/assets/images/projects/utils/projects-dark.png';
+
 export default function Projects() {
   // get the theme from provider
   const theme = useContext<theme>(ThemeContext);
@@ -23,8 +26,8 @@ export default function Projects() {
       ${isCurrentLight ? 'bg-green-light' : 'bg-green-dark'}`}>
       {
         isCurrentLight ?
-          <img src='src/assets/images/projects/utils/projects-light.png' alt='project icon' className={'xl:w-32'}/>
-          : <img src='src/assets/images/projects/utils/projects-dark.png' alt='project icon' className={'xl:w-32'}/>
+          <img src={projectsLight} alt='project icon' className={'xl:w-32'}/>
+          : <img src={projectsDark} alt='project icon' className={'xl:w-32'}/>
       }
       <h1 className={`text-5xl font-bold ${isCurrentLight ? 'text-green-dark' : 'text-green-light'} xl:text-6xl`}>{currentTrad.title}</h1>
       {
