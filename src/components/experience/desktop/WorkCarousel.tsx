@@ -33,25 +33,25 @@ export default function WorkCarousel({experiences}: Props){
   return (
     <div className={`hidden w-full flex-col items-center h-3/5 ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'} xl:flex`}>
       <div className={`experience-carousel ${isCurrentLight ? 'experience-carousel-light' : 'experience-carousel-dark'}`}>
-        {
-          isCurrentLight ?
-            <img src={arrowLight} alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
-              onClick={previous}/>
-            :  <img src={arrowDark} alt='previous' className={'w-14 h-auto absolute top-[45%] rotate-180 pe-4'}
-              onClick={previous}/>
-        }
+        <div className={`experience-carousel-arrow-background bg-opacity-0 ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={previous}>
+          {
+            isCurrentLight ?
+              <img src={arrowLight} alt='previous' className={'experience-carousel-arrow-left'} />
+              :  <img src={arrowDark} alt='previous' className={'experience-carousel-arrow-left'} />
+          }
+        </div>
         {
           experiences.map((experience, index) => {
             return <CarouselItem key={index} index={index} active={current} experience={experience}/>;
           })
         }
-        {
-          isCurrentLight ?
-            <img src={arrowLight} alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
-              onClick={next}/>
-            :  <img src={arrowDark} alt='previous' className={'w-14 h-auto absolute top-[45%] right-0 pe-4'}
-              onClick={next}/>
-        }
+        <div className={`experience-carousel-arrow-background bg-opacity-0 ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={next}>
+          {
+            isCurrentLight ?
+              <img src={arrowLight} alt='previous' className={'experience-carousel-arrow-right'} />
+              :  <img src={arrowDark} alt='previous' className={'experience-carousel-arrow-right'} />
+          }
+        </div>
       </div>
     </div>
   );

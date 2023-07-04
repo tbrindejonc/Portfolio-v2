@@ -33,25 +33,27 @@ export default function ProjectCarousel({projects}: Props){
   return (
     <div className={`hidden w-full flex-col items-center h-3/5 ${isCurrentLight ? 'text-pink-light' : 'text-violet-dark'} xl:flex`}>
       <div className={`project-carousel ${isCurrentLight ? 'project-carousel-light' : 'project-carousel-dark'}`}>
-        {
-          isCurrentLight ?
-            <img src={arrowLight} alt='previous'
-              className={'w-14 h-auto absolute top-[10%] left-0 pe-4 rotate-180 cursor-pointer z-10'} onClick={previous}/>
-            :  <img src={arrowDark} alt='previous'
-              className={'w-14 h-auto absolute top-[10%] left-0 pe-4 rotate-180 cursor-pointer z-10'} onClick={previous}/>
-        }
+        <div className={`projects-carousel-arrow-background bg-opacity-0 
+          ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={previous}>
+          {
+            isCurrentLight ?
+              <img src={arrowLight} alt='previous' className={'projects-carousel-arrow-left'}/>
+              : <img src={arrowDark} alt='previous' className={'projects-carousel-arrow-left'}/>
+          }
+        </div>
         {
           projects.map((project, index) => {
             return <ProjectCarouselItem project={project} key={index} index={index} active={current} />;
           })
         }
-        {
-          isCurrentLight ?
-            <img src={arrowLight} alt='previous'
-              className={'w-14 h-auto absolute top-[10%] right-0 pe-4 cursor-pointer z-10'} onClick={next}/>
-            :  <img src={arrowDark} alt='previous'
-              className={'w-14 h-auto absolute top-[10%] right-0 pe-4 cursor-pointer z-10'} onClick={next}/>
-        }
+        <div className={`projects-carousel-arrow-background right-4 bg-opacity-0 
+          ${isCurrentLight ? 'bg-pink-light' : 'bg-violet-dark'}`} onClick={next}>
+          {
+            isCurrentLight ?
+              <img src={arrowLight} alt='previous' className={'projects-carousel-arrow-right'}/>
+              :  <img src={arrowDark} alt='previous' className={'projects-carousel-arrow-right'}/>
+          }
+        </div>
       </div>
     </div>
   );

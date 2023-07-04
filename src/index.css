@@ -9,7 +9,7 @@
 
 @layer components {
     .navbar-item-background-mobile {
-        @apply h-16 w-16 rounded-full flex flex-col items-center justify-center
+        @apply h-16 w-16 rounded-full flex flex-col items-center justify-center hover:scale-110 transform duration-200 cursor-pointer
     }
 
     .navbar-item-mobile {
@@ -47,6 +47,7 @@
 
     .skill-section-base {
         @apply w-[22%] h-16 flex flex-col items-center justify-center border-2 rounded-t-xl p-2
+            cursor-pointer hover:scale-90 transform duration-500
     }
 
     .skill-section-light-unselected {
@@ -92,7 +93,7 @@
     }
 
     .contact-link {
-        @apply flex flex-row items-center justify-between w-full h-[15vh]
+        @apply flex flex-row items-center justify-between w-full h-[15vh] transform duration-500 hover:scale-110
     }
 
     .navbar-menu-base {
@@ -125,7 +126,7 @@
     }
 
     .experience-carousel {
-        @apply w-4/6 h-full flex flex-row items-center justify-between rounded-xl relative overflow-hidden bg-gradient-to-b border-2
+        @apply w-4/6 h-full flex flex-row items-center justify-between rounded-xl overflow-hidden bg-gradient-to-b border-2 relative
     }
 
     .experience-carousel-light {
@@ -149,18 +150,42 @@
     }
 
     .navbar-item-desktop {
-        @apply rounded-xl border-2 w-[12vw] h-10 pt-1 text-center text-xl
+        @apply rounded-xl border-2 w-[12vw] h-10 pt-1 text-center text-xl hover:shadow-2xl transition duration-200 transform hover:scale-110
     }
 
     .navbar-item-desktop-light {
-        @apply border-purple-dark bg-pink-light text-primary-light
+        @apply border-purple-dark bg-pink-light text-primary-light shadow-violet-dark
     }
 
     .navbar-item-desktop-dark {
-        @apply border-violet-light bg-violet-dark text-primary-dark
+        @apply border-violet-light bg-violet-dark text-primary-dark shadow-pink-light
     }
 
     .contact-icon {
         @apply w-20 h-auto xl:w-28
+    }
+
+    .experience-carousel-arrow-left {
+        @apply w-14 h-auto absolute top-2 rotate-180 right-4 pe-4
+    }
+
+    .experience-carousel-arrow-right {
+        @apply w-14 h-auto absolute top-2 left-4 pe-4
+    }
+
+    .experience-carousel-arrow-background {
+        @apply hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full relative z-10 m-4 cursor-pointer
+    }
+
+    .projects-carousel-arrow-background {
+        @apply hover:bg-opacity-20 duration-500 transition w-16 h-16 rounded-full z-10 m-4 cursor-pointer absolute top-4
+    }
+
+    .projects-carousel-arrow-right {
+        @apply w-14 h-auto absolute top-2 right-2 ps-4
+    }
+
+    .projects-carousel-arrow-left {
+        @apply w-14 h-auto absolute top-2 left-2 rotate-180 ps-4
     }
 }

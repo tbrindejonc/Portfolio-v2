@@ -61,7 +61,7 @@ export default function ProjectCarouselItem({project, index, active}: Props){
           <div className={'w-full flex flex-row items-center justify-around'}>
             {
               project.views.map((view, index) => {
-                return <a key={index} href={view.link}>
+                return <a key={index} href={view.link} className={'transform duration-500 hover:animate-spin hover:scale-150'}>
                   <img src={isCurrentLight ? view.dark : view.light} alt={view.name} className={'w-12 h-auto'}/></a>;
               })
             }
