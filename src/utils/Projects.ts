@@ -24,7 +24,7 @@ import webDark from '@/assets/images/projects/links/web-dark.png';
 import pinitGif from '@/assets/images/projects/utils/pinit.gif';
 import portfolioV1Gif from '@/assets/images/projects/utils/portfolio-v1.gif';
 import spotifreeGif from '@/assets/images/projects/utils/spotifree.gif';
-import uhcRunGif from '@/assets/images/projects/utils/uhc-run.gif';
+import memoAppGif from '@/assets/images/projects/utils/memo-app.gif';
 
 // object for all techs projectIcons
 export const allTechs = {
@@ -86,6 +86,30 @@ export const allViews = {
 
 // array of projects objects
 export const projects: Array<project> = [
+  {
+    name: 'Memo App',
+    gif: memoAppGif,
+    description: {
+      fr: 'Cette petite app permet de créer, modifier et supprimer des petits memos. On peut également changer le thème et la langue de l\'app.',
+      en: 'This little app enables you to create, modify and delete little memos. You are also able to change the theme or the langage of the page.'
+    },
+    techs: [
+      allTechs.react,
+      allTechs.typescript,
+      allTechs.tailwind,
+      allTechs.firebase
+    ],
+    views: [
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/memo-app'
+      },
+      {
+        ...allViews.web,
+        link: 'https://memo-app.timeuh.live/'
+      }
+    ]
+  },
   {
     name: 'Pinit',
     gif: pinitGif,
@@ -149,25 +173,6 @@ export const projects: Array<project> = [
       {
         ...allViews.github,
         link: 'https://github.com/Timeuh/Spotifree'
-      }
-    ]
-  },
-  {
-    name: 'UHC Run',
-    gif: uhcRunGif,
-    description: {
-      fr: 'L\'UHC Run est mon premier projet de code, programmé en Java. Il s\'agit d\'un plugin Minecraft Spigot permettant de jouer des parties' +
-        ' en multijoueur avec plusieurs ajouts au jeu de base.',
-      en: 'The UHC Run is mon first code project, programmed in Java. It is a Minecraft Spigot plugin which permits to play multiplayer games' +
-        ' with several additions to the main game.'
-    },
-    techs: [
-      allTechs.java
-    ],
-    views: [
-      {
-        ...allViews.github,
-        link: 'https://github.com/Timeuh/UHC-Run'
       }
     ]
   }
