@@ -9,6 +9,18 @@ export const workExperiences: Array<experience> = [
     company: 'GIBRALTAZ',
     logo: gibraltaz,
     period: {
+      fr: 'Août 2023',
+      en: 'August 2023'
+    },
+    role: {
+      fr: 'Développeur web junior (CDD)',
+      en: 'Junior Web Developer (temporary job)'
+    }
+  },
+  {
+    company: 'GIBRALTAZ',
+    logo: gibraltaz,
+    period: {
       fr: 'Février-Avril 2023',
       en: 'February-April 2023'
     },
