@@ -23,7 +23,7 @@ import webDark from '@/assets/images/projects/links/web-dark.png';
 
 import pinitGif from '@/assets/images/projects/utils/pinit.gif';
 import portfolioV1Gif from '@/assets/images/projects/utils/portfolio-v1.gif';
-import spotifreeGif from '@/assets/images/projects/utils/spotifree.gif';
+import wankuldexGif from '@/assets/images/projects/utils/wankuldex.gif';
 import memoAppGif from '@/assets/images/projects/utils/memo-app.gif';
 
 // object for all techs projectIcons
@@ -86,6 +86,29 @@ export const allViews = {
 
 // array of projects objects
 export const projects: Array<project> = [
+  {
+    name: 'WankulDex',
+    gif: wankuldexGif,
+    description: {
+      fr: 'Le WankulDex est un site permettant de consulter et manipuler les cartes Wankul, créées par le duo de streamers/youtubers Wankil Studio.',
+      en: 'The WankulDex is a site enabling you to see and manipulate Wankul cards, which were created by the duo of streamers/youtubers Wankil Studio.'
+    },
+    techs: [
+      allTechs.react,
+      allTechs.tailwind,
+      allTechs.typescript
+    ],
+    views: [
+      {
+        ...allViews.github,
+        link: 'https://github.com/Timeuh/Wankuldex'
+      },
+      {
+        ...allViews.web,
+        link: 'https://wankuldex.timeuh.fr'
+      }
+    ]
+  },
   {
     name: 'Memo App',
     gif: memoAppGif,
@@ -153,26 +176,6 @@ export const projects: Array<project> = [
       {
         ...allViews.web,
         link: 'https://portfolio-v1.timeuh.live/'
-      }
-    ]
-  },
-  {
-    name: 'Spotifree',
-    gif: spotifreeGif,
-    description: {
-      fr: 'Spotifree est un site web de streaming de musique, programmé en PHP. Le style est fait avec Tailwind CSS. ' +
-        'Ce projet était mon premier site web, et je voulais essayer d\'utiliser Tailwind CSS.',
-      en: 'Spotifree is a music streaming website programmed in PHP. The style is done with Tailwind CSS. This war my first web project, and' +
-        ' I wanted to try Tailwind CSS.'
-    },
-    techs: [
-      allTechs.php,
-      allTechs.tailwind
-    ],
-    views: [
-      {
-        ...allViews.github,
-        link: 'https://github.com/Timeuh/Spotifree'
       }
     ]
   }
