@@ -129,7 +129,7 @@ export const projects: Array<project> = [
       },
       {
         ...allViews.web,
-        link: 'https://memo-app.timeuh.live/'
+        link: 'https://memo-app.timeuh.fr/'
       }
     ]
   },
@@ -175,7 +175,7 @@ export const projects: Array<project> = [
       },
       {
         ...allViews.web,
-        link: 'https://portfolio-v1.timeuh.live/'
+        link: 'https://portfolio-v1.timeuh.fr/'
       }
     ]
   }
