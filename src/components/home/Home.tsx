@@ -61,6 +61,10 @@ export default function Home(){
   return (
     <div id={'home'} className={`home-base-mobile 
       ${isCurrentLight ? 'home-light-mobile xl:home-light-desktop' : 'home-dark-mobile xl:home-dark-desktop'}`}>
+      <section className={'text-violet-dark flex flex-row items-center bg-violet-200 space-x-2 text-4xl w-full justify-center p-2'}>
+        <h2>Un portfolio plus récent est disponible, visitez</h2>
+        <a href='https://timeuh.fr' className={'text-green-800'}>timeuh.fr</a>
+      </section>
       <h1 ref={nameRef} className={`text-6xl font-bold text-center xl:text-9xl ${isCurrentLight ? 'text-violet-dark' : 'text-pink-light'}`}
         onMouseEnter={() => {
           titleEffect(nameRef);
